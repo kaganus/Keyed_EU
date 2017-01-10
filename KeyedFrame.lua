@@ -1,7 +1,7 @@
 ﻿KEYED_WEEK = 604800				-- 7 Days
 KEYED_RESET_NA = 1467712800		-- Tue, 05 Jul 2016 00:00:00 GMT
 KEYED_RESET_OC = 1467752400		-- Tue, 05 Jul 2016 11:00:00 GMT !!!UNTESTED (Also unused)!!!
-KEYED_RESET_EU = 1467799200		-- Mon, 06 Jul 2016 10:00:00 GMT !!!UNTESTED (Also unused)!!!
+KEYED_RESET_EU = 1467788400		-- Mon, 06 Jul 2016 07:00:00 GMT
 KEYED_OOD = false
 KEYED_DEPLETED_MASK = 4194304
 KEYED_FRAME_PLAYER_HEIGHT = 16
@@ -131,7 +131,7 @@ end
 
 function GetKeystoneData ()
 	-- Prepare
-	local keyedReset = KEYED_RESET_NA
+	local keyedReset = KEYED_RESET_EU
 	local keyedWeek = KEYED_WEEK
 
 	local tuesdays = math.floor((GetServerTime() - keyedReset) / keyedWeek)
